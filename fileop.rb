@@ -6,6 +6,7 @@ class A
           if (lines.match('#')||lines.match('@'))
             #puts lines
           else
+            if(lines.match(',')&& lines.match('='))
             puts lines
           end
         #k=lines.split('=')
