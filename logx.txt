@@ -1,0 +1,2 @@
+1. Remove all the lines starting with hash
+2. Remove all the empty lines
