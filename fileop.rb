@@ -3,11 +3,20 @@ class A
 	 # begin
 	      #file_path=
 	  		File.readlines('D:\Rails\Access.txt').each do |lines|
-          if (lines.match('#')||lines.match('@'))
-            #puts lines
+          #puts lines
+        if (lines.match('#')||lines.match('@'))
+
           else
-            if(lines.match(',')&& lines.match('='))
-            puts lines
+            #puts lines
+            names=lines.split(',')
+            puts names
+            #if(lines.match(',')&& lines.match('=')) #Removes the unwanted User permission from HCL_IP_Repos
+              #lines.split('=')
+            #else
+             #  puts lines
+              # lines.split('=')
+            end
+            #puts lines
           end
         #k=lines.split('=')
 
@@ -22,7 +31,7 @@ class A
 			#end
 			
 	end
-end
+
 
 foo=A.new()
 foo.fileope
