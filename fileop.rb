@@ -5,7 +5,14 @@ class A
           else
             if (lines.match(':/'))
             else
-              puts lines
+              #puts lines
+              g=lines.split('=')
+              #k=g.join('/n')
+              #puts g
+              if(g.match(','))
+              puts g
+              end
+
             end
           end
         end
