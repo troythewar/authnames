@@ -9,7 +9,7 @@ class A
                 puts lines
               end
               g=lines.split('=')[1].to_s
-              l=g.split(',').to_s
+              l=g.split(',')
               puts l
               end
           end
