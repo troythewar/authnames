@@ -5,20 +5,16 @@ class A
           else
             if (lines.match(':/'))
             else
-              #puts lines
-              g=lines.split('=')
-              #k=g.join('/n')
-              #puts g
-              if(g.match(','))
+              if lines.match('\[')
+                puts lines
+              end
+              g=lines.split('=')[1]
               puts g
               end
-
-            end
           end
         end
 	end
 end
-
 foo=A.new()
 foo.fileope
 
