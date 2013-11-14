@@ -5,11 +5,9 @@ class A
         if (lines.match('#')||lines.match('@'))
           else
             if (lines.match('/'))
-              k=lines.split(':/]')
-              l=k.to_s
-
-              if(l.match(','))
-                puts l
+              k=lines.split(':/]').to_s
+              if(k.match(','))
+                puts k
               end
           end
         end
