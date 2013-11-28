@@ -1,21 +1,25 @@
 class A
 	def fileope
+        f= File.open('D:\Rails\Move.txt','w') do |f|
 	  		File.readlines('D:\Rails\Access.txt').each do |lines|
-         f= File.open('D:\Rails\Move.txt','w')
+
           if (lines.match('#')||lines.match('@'))
-          else
+            else
             if (lines.match(':/'))
             else
               if lines.match('\[')
                puts lines
+                f.write  lines
               end
               g=lines.split('=')[1].to_s
               l=g.split(',')
-                puts l
-
-
+              #puts "Processing"
+              puts l
+               f.write  g
               end
-          end
+            end
+
+         end
         end
 	end
 end
