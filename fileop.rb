@@ -7,7 +7,7 @@ class A
             if (lines.match(':/'))
             else
               if lines.match('\[')
-               puts lines
+               #puts lines
                 f.write  lines
               end
               g=lines.split('=')[1].to_s
@@ -18,8 +18,18 @@ class A
             end
          end
         end
-	end
+  end
+  def join_them
+    p= File.open('D:\Rails\Username\Move.txt','w') do |p|
+    k=File.readlines('D:\Rails\Move.txt','w').each do |read_lines|
+      y=read_lines.split(',')
+      puts y
+      p.write y
+      end
+    end
+  end
 end
 foo=A.new()
 foo.fileope
+foo.join_them
 

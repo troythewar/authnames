@@ -1,0 +1,12 @@
+class B
+  def join_them
+    k=File.readlines('D:\Rails\Move.txt','w').each do |read_lines|
+      y=read_lines.split(',')
+      puts y
+end
+
+  end
+end
+
+fooo=B.new()
+B.join_them
