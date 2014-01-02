@@ -1,7 +1,7 @@
 class A
 	def fileope
-        repo=File.open('D:\Rails\Username\Repo.txt','w+')
-	  		File.readlines('D:\Rails\Access.txt').each do |lines|
+        repo=File.open('C:\Rails\authnames\Repo.txt','w+')
+	  		File.readlines('C:\Rails\authnames\Access.txt').each do |lines|
           #puts lines
         if (lines.match('#')||lines.match('@'))
           else
@@ -9,8 +9,8 @@ class A
               #k=lines.split(':/]').to_s
               #puts k
               #if(k.match(','))
-                repo.write lines
-                puts lines
+                repo.write lines.to_s.delete "[:/]"
+               # puts lines
               #end
           end
         end
@@ -19,4 +19,5 @@ class A
 end
 foo=A.new()
 foo.fileope
+
 
