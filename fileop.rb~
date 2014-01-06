@@ -41,7 +41,7 @@ class A
 	if((lines.include?"[groups]")||(lines.include? " ")) then
 	else
 	puts lines	
-	p.write lines.split(",").join('\\n')
+	p.write lines.split(",").join(",")
 	end
 	end
 	end

@@ -10,7 +10,7 @@ class A
               #puts k
               #if(k.match(','))
                 repo.write lines.to_s.delete "[:/]"
-               # puts lines 
+               # puts lines
               #end
           end
         end
